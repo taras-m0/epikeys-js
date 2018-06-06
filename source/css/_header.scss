@@ -1,0 +1,47 @@
+@import "./common";
+
+body {
+  padding-top: $header_height;
+}
+.header {
+  position: absolute;
+  background-color: #36274c;
+  height: $header_height;
+  width: 100%;
+
+  padding-top: $header_height / 4;
+  margin-top: -$header_height;
+
+  .header-container {
+    @include wrapper_center;
+
+    line-height: $header_height / 2;
+    font-size: $header_height / 3;
+
+    color: white;
+    .fa-color {
+      color: #d65c50;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .header-left {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px dashed #5e5270;
+    &:nth-last-of-type(1){
+      border: none;
+    }
+  }
+
+  .header-right {
+    float: right;
+  }
+}
+
+@import "./header2";

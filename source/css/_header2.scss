@@ -1,0 +1,42 @@
+@import "./config";
+
+.header2 {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+
+  .header2-wrapper {
+    @include wrapper_center;
+
+    padding-top: 1em;
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .link-list {
+    float: right;
+
+    &>li {
+      display: inline-block;
+      list-style: none;
+      padding: 1em .5em;
+      vertical-align: middle;
+
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    };
+  }
+}

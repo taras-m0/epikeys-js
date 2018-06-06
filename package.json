@@ -1,0 +1,53 @@
+{
+  "name": "epickeys-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env.development --progress --colors --hot --inline --open",
+    "dev": "webpack --env.development --progress --colors --watch",
+    "build": "webpack --env.production --progress --colors --display-error-details"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "formdata-polyfill": "*",
+    "history": "*",
+    "jquery": "^1.12.4",
+    "owl.carousel": "^2.3.4",
+    "uiv": "^0.11.11",
+    "vue": "2.*",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-types": "^1.2.2",
+    "vuex": "^2.3.1",
+    "whatwg-fetch": "^2.*"
+  },
+  "devDependencies": {
+    "acorn-dynamic-import": "^3.0.0",
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-hot-loader": "^1.3.9",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.4",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.1.5",
+    "prop-types": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "uglify-js": "^3.3.24",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-spritesmith": "^0.4.1"
+  },
+  "author": "TarasM",
+  "license": "ISC"
+}
