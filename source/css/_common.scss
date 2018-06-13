@@ -1,5 +1,14 @@
 @import "config";
 
+.badge {
+  background-color: #cfaf00;
+  color: black;
+  font-size: .5em;
+  text-transform: uppercase;
+  padding: .3em;
+  vertical-align: middle;
+}
+
 @mixin wrapper_center {
   margin: 0 auto;
   width: 100%;
