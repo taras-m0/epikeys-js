@@ -22,7 +22,7 @@ module.exports = (env) => {
             historyApiFallback: true,
             // hot: true,
             before: function(app){
-                app.get('/api/data', sliderData );
+                app.get('/sliders.json', sliderData );
             }
         },
         devtool: env.development ? 'cheap-module-eval-source-map' : false,
